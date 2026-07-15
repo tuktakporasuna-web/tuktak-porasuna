@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDUCATION MASTER</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(45deg, #0a2540, #007bff);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #222;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #007bff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero img {
+  width: 140px;
+}
+
+.hero h1 {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* NOTICE */
+.notice {
+  background: #ffeb3b;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* SECTION */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* COURSES */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png">
+  <h1>EDUCATION MASTER</h1>
+  <p>Your Success, Our Mission</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#courses">Courses</a>
+  <a href="#notice">Notice</a>
+  <a href="#admission">Admission</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <img src="logo.png">
+  <h1>Welcome to EDUCATION MASTER</h1>
+  <p>Best Coaching Center for Quality Education</p>
+  <button class="btn">Join Now</button>
+</section>
+
+<div class="notice" id="notice">
+  <h3>?? Notice Board</h3>
+  <p>Admission Open for 2027 Batch!</p>
+</div>
+
+<section class="section" id="courses">
+  <h2>Our Courses</h2>
+  <div class="courses">
+
+    <div class="card">
+      <h3>Class 02-05 & 07-09</h3>
+      <p>All Subjects</p>
+    </div>
+
+    <div class="card">
+      <h3>SSC Batch</h3>
+      <p>English, General Science</p>
+    </div>
+
+    <div class="card">
+      <h3>HSC Batch</h3>
+      <p>ICT</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="admission">
+  <h2>Admission Form</h2>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Student Name" required>
+    <input type="text" placeholder="Class" required>
+    <textarea placeholder="Courses" required></textarea>
+    <input type="text" placeholder="Phone Number" required>
+    <textarea placeholder="Address"></textarea>
+ 
+    <button type="submit">Submit</button>
+  </form>
+
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>?? Location: Labsha,Satkhira</p>
+  <p>?? Phone: 01844355662</p>
+  <p>?? Email: real.education.master.2026@gmail.com </p>
+</section>
+
+<footer>
+  <p>© 2026 EDUCATION MASTER | All Rights Reserved</p>
+</footer>
+
+<script>
+function submitForm(e){
+  e.preventDefault();
+  alert("Form Submitted Successfully!");
+}
+</script>
+
+</body>
+</html>
